@@ -17,8 +17,6 @@ const server = new ApolloServer({
 
 server.applyMiddleware({ app });
 
-app.get("/", (req, res) => res.send("Express on Vercel"));
-
 const PORT = process.env.PORT || 4000;
 
 app.listen(PORT, () => {
